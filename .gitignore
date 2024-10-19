@@ -1,0 +1,51 @@
+# Environnement Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Environnements virtuels
+venv/
+env/
+.virtualenv/
+pip-wheel-metadata/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Fichiers de configuration de l'IDE
+.vscode/
+.idea/
+
+# Caches de données
+*.log
+*.sqlite
+*.db
+
+# Configurations de packages et dépendances
+.Python
+*.env
+*.spec
+.env
+.env.*
+
+# fichiers générés par LangChain ou d'autres bibliothèques
+*.json
+*.yaml
+*.pkl
+*.h5
+
+# Dossiers de modèles et autres artefacts générés
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.onnx
+
+# Fichiers spécifiques à certaines plateformes
+.DS_Store
+Thumbs.db
+
