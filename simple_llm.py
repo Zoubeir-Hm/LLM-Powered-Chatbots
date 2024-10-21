@@ -6,8 +6,9 @@ import gradio as gr
 # Load environment variables from .env file
 load_dotenv()
 
-# Set constants for Hugging Face model and API token
-MODEL_ID = "mistralai/Mistral-7B-Instruct-v0.3"
+# Set constants for Hugging Face model and API token and the model id
+#MODEL_ID = "mistralai/Mistral-7B-Instruct-v0.3"
+MODEL_ID='meta-llama/Meta-Llama-3-8B-Instruct'
 API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
 
 # Check if the API token is loaded correctly
@@ -39,7 +40,7 @@ demo = gr.Interface(
     inputs="text",
     outputs="text",
     title="LLM-Powered Chatbot",
-    description="Ask anything and get responses powered by the Mistral-7B model."
+    description="Ask anything and get responses powered by the Meta-Llama-3-8B model."
 )
 
 # Launch the Gradio interface on the specified port and server name
